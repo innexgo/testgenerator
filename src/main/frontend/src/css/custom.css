@@ -41,4 +41,9 @@
 .btn--toggle-02 p:last-child {
   padding-right: 0;
 }
+
+.testimonial-slider .testimonial-content .t-small-card {
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
 /*# sourceMappingURL=custom.css.map */
