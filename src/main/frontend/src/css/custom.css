@@ -46,4 +46,18 @@
   padding-top: 5px;
   padding-bottom: 25px;
 }
+.site-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #6d4f3e;
+  height: 100px;
+  overflow: hidden;
+  z-index: 9999;
+}
+.main{
+  padding-top:102px;
+}
+.main-navigation .main-menu a.active{
+}
 /*# sourceMappingURL=custom.css.map */
