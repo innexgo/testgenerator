@@ -15,10 +15,10 @@ function Header() {
                             <div className="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
                                 <div className="header-btns">
                                     <div className="btn-1 btn-outlined">
-                                        <a href="#">Login</a>
+                                        <a href="login">Login</a>
                                     </div>
                                     <div className="btn-2">
-                                        <a href="#">Sign Up</a>
+                                        <a href="register">Sign Up</a>
                                     </div>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@ function Header() {
                                 
                                         <li className="menu-item"><a href="#pricing">Pricing</a></li>
                                 
-                                        <li className="menu-item"><a href="#contact">Contact</a></li>   
+                                        <li className="menu-item"><a href="#contact">Contact</a></li>
                                         </ul>
                                 </div>
                                 <div className="mobile-menu"></div>
