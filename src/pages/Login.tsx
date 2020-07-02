@@ -1,9 +1,13 @@
 import React from 'react';
-import ExternalLayout from '../components/ExternalLayout';
+import { connect } from "react-redux";
 
-function Login(){
-return(
-<ExternalLayout>
+import { logIn } from "../actions/authActions";
+
+interface IProps {
+  logInConnect: () => void;
+}
+
+const Login = ({ logInConnect }: IProps ) => (
 <div className="registration-form">
         <form>
             <div className="title">
@@ -16,7 +20,7 @@ return(
                 <input type="password" className="form-control item" id="password" placeholder="Password" />
             </div>
             <div className="form-group">
-                <button type="button" className="btn btn-block create-account">Login</button>
+                <button type="button" className="btn btn-block create-account" onClick={logInConnect}>Login</button>
             </div>
         </form>
                 <div className="register">
@@ -32,8 +36,14 @@ return(
             </div>
         </div>
     </div>
-    </ExternalLayout>
     );
-  }
 
-export default Login;
+const mapDispatchToProps = {
+  logInConnect: logIn
+};
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(Login);
+

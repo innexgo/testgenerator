@@ -1,9 +1,7 @@
 import React from 'react';
-import ExternalLayout from '../components/ExternalLayout';
 
 function Register(){
 return(
-  <ExternalLayout>
     <div className="registration-form">
         <form>
             <div className="title">
@@ -40,7 +38,6 @@ return(
             </div>
         </div>
     </div>
-  </ExternalLayout>
   );
   }
 

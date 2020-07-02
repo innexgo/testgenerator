@@ -1,10 +1,9 @@
 import React from 'react';
-
-import ExternalLayout from "../components/ExternalLayout";
+import ExternalLayout from '../components/ExternalLayout';
 
 function Home() {
   return(
-                  <ExternalLayout>
+  <ExternalLayout>
                     <div className="main">
         <div className="hero-area pt-4 pt-lg-5">
             <div className="container">

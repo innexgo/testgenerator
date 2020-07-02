@@ -1,29 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { applyMiddleware, compose, createStore } from "redux";
+import thunkMiddleware from "redux-thunk-recursion-detect";
 
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
+import "./index.css";
+import App from "./App";
+import AuthReducer from "./reducers/authReducers";
+import * as serviceWorker from "./serviceWorker";
+import { CurrentState } from "./types";
+
+let composeEnhancers;
+
+if (
+  process.env.NODE_ENV !== "production" &&
+  (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+) {
+  composeEnhancers = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
+} else {
+  composeEnhancers = compose;
+}
+
+const store = createStore<CurrentState, any, any, any>(
+  AuthReducer,
+  undefined,
+  composeEnhancers(applyMiddleware(thunkMiddleware)),
+);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <div>
-        <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-
-        </Switch>
-      </div>
-    </BrowserRouter>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
+
+serviceWorker.unregister();
