@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Register(){
 return(
@@ -20,17 +22,24 @@ return(
                 <input type="text" className="form-control item" id="phone-number" placeholder="Phone Number" />
             </div>
             <div className="form-group">
-                <input type="text" className="form-control item" id="birth-date" placeholder="Birth Date" />
+                <input type="text" className="form-control item" id="schoolname" placeholder="School Name" />
             </div>
             <div className="form-group">
-                <button type="button" className="btn btn-block create-account">Create Account</button>
+                <input type="text" className="form-control item" id="department" placeholder="Department" />
+            </div>
+            <div className="form-group">
+            <Container>
+            <Row>
+                <Col><button type="button" className="btn btn-block create-account"><Link to = '/login'>Sign In</Link></button></Col>
+                  <Col><button type="button" className="btn btn-block create-account">Sign Up</button></Col>
+            </Row>
+            </Container>
             </div>
         </form>
         <div className="register">
-        <h5><a href="/login">Sign in instead</a></h5>
         </div>
         <div className="social-media">
-            <h5>Sign up with social media</h5>
+            <h5>Sign up with social media (Take out if we don't use)</h5>
             <div className="social-icons">
                 <a href="#"><i className="icon-social-facebook" title="Facebook"></i></a>
                 <a href="#"><i className="icon-social-google" title="Google"></i></a>

@@ -21,6 +21,9 @@ const Login = ({ logInConnect }: IProps ) => (
             <div className="form-group">
                 <input type="password" className="form-control item" id="password" placeholder="Password" />
             </div>
+            <div className="forgot">
+          <h5><a href="/forgot-password">Forgot Password?</a></h5>
+          </div>
             <div className="form-group">
             <Container>
             <Row>
@@ -30,9 +33,7 @@ const Login = ({ logInConnect }: IProps ) => (
             </Container>
             </div>
         </form>
-                <div className="register">
-          <h5><a href="/register">Don't have an account? Click here to create one.</a></h5>
-          </div>
+
 
         <div className="social-media">
             <h5>Sign in with social media (Take out if we don't use)</h5>

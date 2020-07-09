@@ -99,13 +99,13 @@ body{
 
 .registration-form .create-account{
     border-radius: 30px;
-    padding: 10px 5px 0px;
+    padding: 10px 0px;
     font-size: 18px;
     font-weight: bold;
     background-color: #5791ff;
     border: none;
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .registration-form .title{
   max-width: 600px;
@@ -114,15 +114,14 @@ body{
   text-align: center;
   padding-bottom: 25px;
 }
-.registration-form .register{
+.registration-form .forgot{
   max-width: 600px;
   background-color: #fff;
   margin: auto;
   padding: 0px 10px 20px;
-  text-align: center;
   color: #94adca;
 }
-.registration-form .register a{
+.registration-form .forgot a{
   color:#9fadca;
 }
 

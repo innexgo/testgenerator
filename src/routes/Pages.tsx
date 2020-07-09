@@ -7,6 +7,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
 import Logout from "../pages/Logout";
+import ForgotPassword from "../pages/ForgotPassword";
 
 import LoggedInRoute from "./LoggedInRoute";
 import LoggedOutRoute from "./LoggedOutRoute";
@@ -17,6 +18,7 @@ const Pages = () => {
       <Route path="/" exact={true} component={Home} />
       <LoggedOutRoute path="/login" exact={true} component={Login} />
       <LoggedOutRoute path="/register" exact={true} component={Register} />
+      <LoggedOutRoute path="/forgot-password" exact={true} component={ForgotPassword} />
 
       <LoggedInRoute path="/dashboard" exact={true} component={Dashboard} />
       <LoggedInRoute path="/logout" exact={true} component={Logout} />
