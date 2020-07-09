@@ -11,7 +11,6 @@
     "@types/local-storage": "^1.4.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.41",
-    "@types/react-bootstrap": "^1.0.1",
     "@types/react-dom": "^16.9.0",
     "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.5",
@@ -34,7 +33,7 @@
     "redux-thunk-recursion-detect": "^1.1.4",
     "typeface-exo": "^0.0.61",
     "typeface-ubuntu": "^0.0.65",
-    "typescript": "~3.7.2"
+    "typescript": "~3.9.6"
   },
   "scripts": {
     "start": "react-scripts start",
