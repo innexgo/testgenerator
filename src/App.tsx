@@ -5,7 +5,8 @@ import { Route, Router } from "react-router-dom";
 import history from "./history";
 import Pages from "./routes/Pages";
 import { checkAuthentication } from "./actions/authActions";
-import { CurrentState} from "./types";
+import { CurrentState} from "./store/auth/types";
+import './components/sidenav.css';
 
 interface IProps {
   checkAuthenticationConnect: () => void;

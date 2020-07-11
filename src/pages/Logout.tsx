@@ -8,9 +8,11 @@ interface IProps {
 }
 
 const Logout = ({ logOutConnect }: IProps) => (
-  <>
+<>
+  <div style={{margin: "auto"}}>
     <p>Logout Test (Placeholder)</p>
     <button onClick={logOutConnect}>log me out</button>
+  </div>
   </>
 );
 

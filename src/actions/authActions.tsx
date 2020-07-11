@@ -1,7 +1,7 @@
 import { ThunkDispatch as Dispatch } from "redux-thunk";
 
 import * as constants from "../constants";
-import { CurrentState } from "../types";
+import { CurrentState } from "../store/auth/types";
 
 export interface IAuthenticate {
   type: constants.AUTHENTICATE;

@@ -8,7 +8,7 @@ import "./index.css";
 import App from "./App";
 import AuthReducer from "./reducers/authReducers";
 import * as serviceWorker from "./serviceWorker";
-import { CurrentState } from "./types";
+import { CurrentState } from "./store/auth/types";
 
 let composeEnhancers;
 

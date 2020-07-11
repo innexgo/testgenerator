@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { connect } from "react-redux";
-import { CurrentState } from "../types";
+import { CurrentState } from "../store/auth/types";
+import Logo from "../img/innexgo_logo_dark.png";
+import { Navbar, Button, Nav } from 'react-bootstrap';
 
 interface IProps {
   isAuthenticated: boolean | null;
@@ -8,56 +10,32 @@ interface IProps {
 
 const Header = ({ isAuthenticated }: IProps) => {
   const logInOut = isAuthenticated ? (
-                                                 <div className="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
-                                <div className="header-btns">
-                                    <div className="btn-1 btn-outlined">
-                                        <a href="/logout">Log Out</a>
-                                    </div>
+                                    <div>
+                                <Button href="/logout" variant="outline-dark" size="lg">Log Out</Button>
                                 </div>
-                            </div>
                         )  : (
-                            <div className="col-sm-7 col-lg-3 col-xl-3 offset-xl-1 d-none d-sm-block order-lg-3">
-                                <div className="header-btns">
-                                    <div className="btn-1 btn-outlined">
-                                        <a href="/login">Login</a>
-                                    </div>
-                                    <div className="btn-2">
-                                        <a href="/register">Sign Up</a>
-                                    </div>
-                                </div>
-                            </div>
+                                       <div>
+                                       <Button href="/login" variant="outline-dark" size="lg">Login</Button>
+                                        <Button href="/register" variant="primary" size="lg">Sign Up</Button>
+                          </div>
                           );
 
 
   return(
 
-                <header className="site-header">
-                    <div className="container">
-                        <div className="row justify-content-center align-items-center position-relative">
-                            <div className="col-sm-4 col-6 col-lg-2 col-xl-2 order-lg-1">
-                                <div className="brand">
-                                    <a href=""><img src="img/innexgo_transparent_logo.png" alt="" /></a>
-                                </div>
-                            </div>
+                <Navbar bg="light justify-content-start" fixed="top">
+                                      <Navbar.Brand href="/">
+                        <img src={Logo} alt="Logo" />
+                      </Navbar.Brand>
 
-                            {logInOut}
+                                        <Nav.Link href="/">Home</Nav.Link>
+                                        <Nav.Link href="/features">Features</Nav.Link>
+                                        <Nav.Link href="/pricing">Pricing</Nav.Link>
+                                        <Nav className="ml-auto">
+                                                                    {logInOut}
+                                                                    </Nav>
 
-                            <div className="col-sm-1 col-6 col-lg-7 col-xl-6 position-static order-lg-2">
-                                <div className="main-navigation">
-                                    <ul className="main-menu">
-                                        <li className="menu-item"><a href="/" className="active">Home</a></li>
-                                        <li className="menu-item"><a href="/features">Features</a></li>
-                                
-                                        <li className="menu-item"><a href="/pricing">Pricing</a></li>
-                                
-                                        </ul>
-                                </div>
-                                <div className="mobile-menu"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </header>
+                </Navbar>
 );
 }
 

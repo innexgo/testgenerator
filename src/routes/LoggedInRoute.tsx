@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import InternalLayout from "../components/InternalLayout";
 
 import history from "../history";
-import { CurrentState } from "../types";
+import { CurrentState } from "../store/auth/types";
 
 interface IProps {
   exact?: boolean;

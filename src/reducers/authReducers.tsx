@@ -3,7 +3,7 @@
 //imports
 import { IAuthenticate, IUnauthenticate } from "../actions/authActions";
 import { AUTHENTICATE, UNAUTHENTICATE } from "../constants";
-import { CurrentState } from "../types";
+import { CurrentState } from "../store/auth/types";
 
 export default function currentReducer(
   state: CurrentState = {

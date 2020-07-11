@@ -28,7 +28,7 @@ function Home() {
                     </div>
                     <div className="col-lg-12">
                         <div className="hero-img">
-                            <img src="img/temp_placeholder.png" alt="" />
+                            <img src="../img/temp_placeholder.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ function Home() {
                 <div className="row">
                     <div className="col-lg-5  col-md-6 col-sm-8">
                         <div className="content-image">
-                            <img src="./img/temp_placeholder.png" alt="" />
+                            <img src="../img/temp_placeholder.png" alt="" />
                         </div>
                     </div>
 
@@ -63,7 +63,7 @@ function Home() {
                 <div className="row ">
                     <div className="col-xl-6 col-sm-10 col-md-6 col-10 order-md-2 offset-xl-1 d-none d-md-block">
                         <div className="content-image">
-                            <img src="./img/temp_placeholder.png" alt="" />
+                            <img src="../img/temp_placeholder.png" alt="" />
                         </div>
                     </div>
                     <div className="col-xl-5 col-sm-12 col-md-6 order-md-1">
@@ -103,7 +103,7 @@ function Home() {
                 <div className="row">
                     <div className="col-xl-5 col-sm-6 col-md-6 col-10 d-none d-md-block">
                         <div className="content-img">
-                            <img src="./img/temp_placeholder.png" alt="" />
+                            <img src="../img/temp_placeholder.png" alt="" />
                         </div>
                     </div>
                     <div className="col-xl-6 col-md-6 offset-xl-1 col-sm-12">
@@ -234,7 +234,7 @@ function Home() {
                                         </p>
                                         <div className="t-small-card ">
                                             <div className="image">
-                                                <img src="./img/" alt="" />
+                                                <img src="../img/" alt="" />
                                             </div>
                                             <div className="content">
                                                 <h5>Carole Ng</h5>
@@ -250,7 +250,7 @@ function Home() {
                                         </p>
                                         <div className="t-small-card ">
                                             <div className="image">
-                                                <img src="./img/" alt="" />
+                                                <img src="../img/" alt="" />
 
                                             </div>
                                             <div className="content">
@@ -266,7 +266,7 @@ function Home() {
                                             "Insert Testimonial"                                        </p>
                                         <div className="t-small-card ">
                                             <div className="image">
-                                                <img src="./img/" alt="" />
+                                                <img src="../img/" alt="" />
                                             </div>
                                             <div className="content">
                                                 <h5>Insert Name</h5>
