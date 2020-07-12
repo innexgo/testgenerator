@@ -42,23 +42,23 @@ export default function AllTests() {
           icon: 'add',
           tooltip: 'New Test',
           isFreeAction: true,
-          onClick: (event) => window.location.href='/'
+          onClick: (event) => window.location.href='/testreport'
         },
         {
           icon: 'edit',
           tooltip: 'Edit',
-          onClick: (event) => window.location.href='/'
+          onClick: (event) => window.location.href='/testreport'
         },
         {
           icon: 'archive',
           tooltip: 'Archive',
-          onClick: (event) => window.location.href='/'
+          onClick: (event) => window.location.href='/testreport'
         },
         //Make dynamic to chart(s).
         {
           icon: 'analytics',
           tooltip: 'Quick Data',
-          onClick: (event) => window.location.href='/'
+          onClick: (event) => window.location.href='/testreport'
         },
       ]}
       onRowClick={(

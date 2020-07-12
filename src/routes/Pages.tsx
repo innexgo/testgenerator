@@ -9,6 +9,7 @@ import Dashboard from "../pages/Dashboard";
 import Logout from "../pages/Logout";
 import ForgotPassword from "../pages/ForgotPassword";
 import TestReport from "../pages/TestReport";
+import TestBanks from "../pages/TestBanks";
 
 import LoggedInRoute from "./LoggedInRoute";
 import LoggedOutRoute from "./LoggedOutRoute";
@@ -24,6 +25,7 @@ const Pages = () => {
       <LoggedInRoute path="/dashboard" exact={true} component={Dashboard} />
       <LoggedInRoute path="/logout" exact={true} component={Logout} />
       <LoggedInRoute path="/testreport" exact={true} component={TestReport} />
+      <LoggedInRoute path="/testbanks" exact={true} component={TestBanks} />
     </Switch>
   );
 };
