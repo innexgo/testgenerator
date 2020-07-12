@@ -2,7 +2,7 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import './alltest_icons.css';
 
-export default function AllTests() {
+export default function CurrentTests() {
   {/*
   state will be implemented with redux, but its not necessary yet since we have fictitious data. Once we add data from db we can add state again.
   const { useState } = React;
@@ -16,24 +16,27 @@ export default function AllTests() {
     ],
   });
   */}
-        var columns:any = [
+      var columns:any = [
         {title: 'Test Name', field: 'name'},
         {title: 'Description', field: 'description'},
-        {title: 'Creation Date', field: 'creationDate', type: 'date'},
-        {title: 'Proctoring Date', field: 'proctoringDate', type: 'date' },
-        {title: 'Last Emailed Date', field: 'lastemailedDate', type: 'date' },
-        {title: 'Last Graded Date', field: 'lasteditDate', type: 'date' },
-        {title: 'Average Score (%)', field: 'meanScore', type: 'percent' },
+        {title: 'Test Bank', field: 'testBank'},
+        {title: 'Date Created', field: 'dateCreated', type: 'date' },
+        {title: 'Date Last Modified', field: 'dateLastModified', type: 'date' },
+        {title: 'Date Last Scheduled', field: 'dateLastScheduled', type: 'date' },
       ];
       var data:any = [
-      { name: 'Diagnostic Test', description: 'First quiz to gauge knowledge.', creationDate: '08/19/20', proctoringDate: '08/20/20', meanScore: '82%' },
-      { name: 'Ch. 1 Test', description: 'First test from textbook.', creationDate: '08/30/20', proctoringDate: '08/31/20', meanScore: '79%' },
+      { name: 'CSAtest4', description: 'CSA L4', testBank: 'CSA 5', dateCreated: '09/05/20', dateLastModified: '09/05/20', dateLastScheduled: '' },
+      { name: 'CSAtest3', description: 'CSA L3 + review from L2', testBank: 'CSA 3', dateCreated: '08/07/20', dateLastModified: '08/11/20', dateLastScheduled: '09/01/20' },
+      { name: 'CSAtest2Review', description: 'Review from L2', testBank: 'CSA 3', dateCreated: '08/15/20', dateLastModified: '08/21/20', dateLastScheduled: '09/01/20' },
+      { name: 'CSAtest2', description: 'CSA L2', testBank: 'CSA 2', dateCreated: '08/07/20', dateLastModified: '08/11/20', dateLastScheduled: '08/28/20' },
+      { name: 'CSAtest1', description: 'CSA L1', testBank: 'CSA 1', dateCreated: '08/07/20', dateLastModified: '08/11/20', dateLastScheduled: '08/25/20' },
+      { name: 'CSAtestpre-req', description: 'Prerequisites', testBank: 'CSA Preq', dateCreated: '08/01/20', dateLastModified: '08/02/20', dateLastScheduled: '08/17/20' },
       ];
       var selectedRowID: any =null;
-      
+
 
   return (
-    <MaterialTable title="All Tests"
+    <MaterialTable title="Current Tests"
       columns={columns}
       data={data}
       //Change onClick: (event) once create-a-test page completed.
@@ -54,12 +57,6 @@ export default function AllTests() {
           tooltip: 'Archive',
           onClick: (event) => window.location.href='/testreport'
         },
-        //Make dynamic to chart(s).
-        {
-          icon: 'analytics',
-          tooltip: 'Quick Data',
-          onClick: (event) => window.location.href='/testreport'
-        },
       ]}
       onRowClick={(
         (evt, selectedRow: any) => selectedRowID = selectedRow?.tableData?.id
@@ -77,4 +74,3 @@ export default function AllTests() {
     />
   );
 }
-

@@ -48,7 +48,7 @@ var columns:any = [
       )}
       options={{
         rowStyle: rowData => ({
-          backgroundColor: (selectedRowID == rowData.tableData.id) ? '#EEE' : '#FFF'
+          backgroundColor: (selectedRowID === rowData.tableData.id) ? '#EEE' : '#FFF'
         }),
         filtering: true,
         headerStyle: {
@@ -59,4 +59,3 @@ var columns:any = [
       />
       );
     }
-

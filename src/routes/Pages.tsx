@@ -10,6 +10,7 @@ import Logout from "../pages/Logout";
 import ForgotPassword from "../pages/ForgotPassword";
 import TestReport from "../pages/TestReport";
 import TestBanks from "../pages/TestBanks";
+import UpdateInformation from "../pages/UpdateInformation";
 
 import LoggedInRoute from "./LoggedInRoute";
 import LoggedOutRoute from "./LoggedOutRoute";
@@ -26,9 +27,9 @@ const Pages = () => {
       <LoggedInRoute path="/logout" exact={true} component={Logout} />
       <LoggedInRoute path="/testreport" exact={true} component={TestReport} />
       <LoggedInRoute path="/testbanks" exact={true} component={TestBanks} />
+      <LoggedInRoute path="/updateinformation" exact={true} component={UpdateInformation} />
     </Switch>
   );
 };
 
 export default Pages;
-

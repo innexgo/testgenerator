@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Card, Container, Col, Row} from 'react-bootstrap';
-import AllTests from '../components/AllTests';
-import ATAnalytics from '../components/AllTestsAnalytics';
+import CurrentTests from '../components/CurrentTests';
 import '../components/sidenav.css';
 
 
@@ -11,7 +10,7 @@ function TestReport() {
     <div className="App">
       <Container fluid>
         <Row>
-          <Col><AllTests /></Col>
+          <Col><CurrentTests /></Col>
         </Row>
       </Container>
     </div>
@@ -19,5 +18,3 @@ function TestReport() {
 }
 
 export default TestReport;
-
-
