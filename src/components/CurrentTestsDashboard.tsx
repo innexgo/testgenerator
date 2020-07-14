@@ -2,7 +2,7 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import './alltest_icons.css';
 
-export default function CurrentTests() {
+export default function CurrentTestsDashboard() {
   {/*
   state will be implemented with redux, but its not necessary yet since we have fictitious data. Once we add data from db we can add state again.
   const { useState } = React;
@@ -57,11 +57,18 @@ export default function CurrentTests() {
           tooltip: 'Archive',
           onClick: (event) => window.location.href='/testreport'
         },
+        {
+          icon: 'schedule',
+          tooltip: 'Schedule',
+          onClick: (event) => window.location.href='/testreport'
+        },
       ]}
       onRowClick={(
         (evt, selectedRow: any) => selectedRowID = selectedRow?.tableData?.id
       )}
       options={{
+        pageSize: 7,
+        pageSizeOptions: [],
         rowStyle: rowData => ({
           backgroundColor: (selectedRowID === rowData.tableData.id) ? '#EEE' : '#FFF'
         }),

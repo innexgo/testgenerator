@@ -5,19 +5,22 @@ import './alltest_icons.css';
 export default function TestSelection() {
 
     var columns:any = [
-        {title: 'Requirements', field: 'requirements'},
+        {title: 'Test Name', field: 'name'},
+        {title: 'Test Description', field: 'description'},
+        {title: 'Test Bank', field: 'testBank'},
+        {title: 'Easy Questions', field: 'easyQuestions'},
+        {title: 'Medium Questions', field: 'mediumQuestions'},
+        {title: 'Hard Questions', field: 'hardQuestions'},
     ];
 
     var data:any = [
-      {requirements: 'Upload a .csv/.xlsx (Microsoft Excel) file.'},
-      {requirements: 'If you are uploading classes, format the data as such: <b>Class Name, Course, Description</b>'},
-      {requirements: 'Upload a .csv/.xlsx (Microsoft Excel) file.'}
+      { name: 'APCS-A unit 1 Test', description: 'CSA ch 4 - 1D arrays', testBank: 'CSA arrays', easyQuestions: '12', mediumQuestions: '5', hardQuestions: '0'}
     ];
 
     var selectedRowID: any =null;
 
   return (
-    <MaterialTable title="Upload Class/Student Data"
+    <MaterialTable title="Selected Test"
     style={{marginBottom: '2rem',}}
       columns={columns}
       data={data}

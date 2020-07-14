@@ -2,7 +2,7 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import './alltest_icons.css';
 
-export default function UpdateClasses() {
+export default function TestTimingPerClass() {
   {/*
   state will be implemented with redux, but its not necessary yet since we have fictitious data. Once we add data from db we can add state again.
   const { useState } = React;
@@ -16,22 +16,21 @@ export default function UpdateClasses() {
 
   const columns:any = [
         {title: 'Class Name', field: 'name'},
-        {title: 'Course', field: 'course'},
-        {title: 'Description', field: 'description'},
+        {title: 'Start Date/Time', field: 'startDate', type: 'datetime'},
+        {title: 'End Date/Time', field: 'endDate', type: 'datetime'},
   ];
 
   const [data, setData] = useState([
-      {name: '1-APCS-A', course: 'APCS-A', description: 'APCSA-A period 1'},
-      {name: '2-APCS-P', course: 'APCS-P', description: 'APCSA-P period 2 freshmen class'},
-      {name: '3-APCS-P', course: 'APCS-P', description: 'APCSA-p period 3 push-in'},
-      {name: '4-APCS-A', course: 'APCS-A', description: 'APCSA-A period 4 repeated class'},
+      {name: '1-APCS-A', startDate: '08/31/20 9:30 a.m.', endDate: '08/31/20 10:20 a.m.'},
+      {name: '2-APCS-A', startDate: '08/31/20 10:35 a.m.', endDate: '08/31/20 11:25 a.m.'},
+      {name: '4-APCS-A', startDate: '08/31/20 12:00 p.m.', endDate: '08/31/20 12:50 p.m.'},
   ]);
 
   var selectedRowID: any =null;
 
 
   return (
-    <MaterialTable title="All Classes"
+    <MaterialTable title="Set Test Timing"
       columns={columns}
       data={data}
       //Change onClick: (event) once create-a-test page completed.
@@ -68,14 +67,14 @@ export default function UpdateClasses() {
           }),
       }}
       options={{
-        pageSize: 7,
+        search: false,
+        pageSize: 5,
         pageSizeOptions: [],
         rowStyle: rowData => ({
           backgroundColor: (selectedRowID === rowData.tableData.id) ? '#EEE' : '#FFF'
         }),
-        filtering: true,
         headerStyle: {
-          backgroundColor: '#990000',
+          backgroundColor: '#121212',
           color: '#FFF',
         }
       }}

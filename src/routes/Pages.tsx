@@ -8,8 +8,12 @@ import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
 import Logout from "../pages/Logout";
 import ForgotPassword from "../pages/ForgotPassword";
-import TestReport from "../pages/TestReport";
+import AssignTest from "../pages/AssignTest";
+import CurrentTests from "../pages/CurrentTests";
+import EmailTest from "../pages/EmailTest";
+import StudentsToTest from "../pages/StudentsToTest";
 import TestBanks from "../pages/TestBanks";
+import TestBankCopy from "../pages/TestBankCopy";
 import UpdateInformation from "../pages/UpdateInformation";
 import EditTestBank from "../pages/EditTestBank";
 
@@ -26,8 +30,12 @@ const Pages = () => {
 
       <LoggedInRoute path="/dashboard" exact={true} component={Dashboard} />
       <LoggedInRoute path="/logout" exact={true} component={Logout} />
-      <LoggedInRoute path="/testreport" exact={true} component={TestReport} />
+      <LoggedInRoute path="/assigntest" exact={true} component={AssignTest} />
+      <LoggedInRoute path="/currenttests" exact={true} component={CurrentTests} />
+      <LoggedInRoute path="/emailtest" exact={true} component={EmailTest} />
+      <LoggedInRoute path="/studentstotest" exact={true} component={StudentsToTest} />
       <LoggedInRoute path="/testbanks" exact={true} component={TestBanks} />
+      <LoggedInRoute path="/testbankcopy" exact={true} component={TestBankCopy} />
       <LoggedInRoute path="/updateinformation" exact={true} component={UpdateInformation} />
       <LoggedInRoute path="/edittestbank" exact={true} component={EditTestBank} />
     </Switch>
