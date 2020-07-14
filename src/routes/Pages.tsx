@@ -11,6 +11,7 @@ import ForgotPassword from "../pages/ForgotPassword";
 import TestReport from "../pages/TestReport";
 import TestBanks from "../pages/TestBanks";
 import UpdateInformation from "../pages/UpdateInformation";
+import EditTestBank from "../pages/EditTestBank";
 
 import LoggedInRoute from "./LoggedInRoute";
 import LoggedOutRoute from "./LoggedOutRoute";
@@ -28,6 +29,7 @@ const Pages = () => {
       <LoggedInRoute path="/testreport" exact={true} component={TestReport} />
       <LoggedInRoute path="/testbanks" exact={true} component={TestBanks} />
       <LoggedInRoute path="/updateinformation" exact={true} component={UpdateInformation} />
+      <LoggedInRoute path="/edittestbank" exact={true} component={EditTestBank} />
     </Switch>
   );
 };
