@@ -2,22 +2,23 @@ import React from 'react';
 import MaterialTable from 'material-table';
 import './alltest_icons.css';
 
-export default function TestSelection() {
+export default function CopyTestBankQuestions() {
 
-    var columns:any = [
-        {title: 'Requirements', field: 'requirements'},
+  var columns:any = [
+        {title: 'Test Bank Name', field: 'name'},
+        {title: 'Description', field: 'description'},
+        {title: 'Date Created', field: 'dateCreated', type: 'date' },
+        {title: 'Date Last Modified', field: 'dateLastModified', type: 'date' },
     ];
 
-    var data:any = [
-      {requirements: 'Upload a .csv/.xlsx (Microsoft Excel) file.'},
-      {requirements: 'If you are uploading classes, format the data as such: <b>Class Name, Course, Description</b>'},
-      {requirements: 'Upload a .csv/.xlsx (Microsoft Excel) file.'}
+  var data:any = [
+      { name: 'CSAch4', description: 'CSA Barron ch 4', dateCreated: '08/05/20', dateLastModified: '09/03/20'},
     ];
 
-    var selectedRowID: any =null;
+  var selectedRowID: any =null;
 
   return (
-    <MaterialTable title="Upload Class/Student Data"
+    <MaterialTable title="Selected Test Bank"
     style={{marginBottom: '2rem',}}
       columns={columns}
       data={data}
