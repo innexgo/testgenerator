@@ -25,7 +25,7 @@ export default function TestBankQuestionsTable() {
             icon: 'add',
             tooltip: 'New Question',
             isFreeAction: true,
-            onClick: (event) => window.location.href='/edittestbank'
+            onClick: (event) => window.location.href='/addquestion'
           },
           {
             icon: 'edit',
@@ -40,7 +40,7 @@ export default function TestBankQuestionsTable() {
           {
             icon: 'archive',
             tooltip: 'Archive',
-            onClick: (event) => window.location.href='/testreport'
+            onClick: (event) => window.location.href='/edittestbank'
           },
         ]}
       onRowClick={(
