@@ -1,6 +1,7 @@
 import React from 'react';
 import TestBankDetails from '../components/TestBankDetails';
-import { Container, Form, Col, Button, Row } from 'react-bootstrap';
+import QuestionDetails from '../components/QuestionDetails';
+import { Container, Form, Col, Button, Row, Tab, Tabs } from 'react-bootstrap';
 import CSS from 'csstype';
 
 export default function AddQuestion(){
@@ -11,57 +12,10 @@ export default function AddQuestion(){
   return (
     <Container fluid>
       <TestBankDetails canEdit={false}/>
+      <Tabs defaultActiveKey="multiplechoice" id="tabs">
+        <Tab eventKey="multiplechoice" title="Multiple Choice">
       <Form style={formStyle}>
-              <Form.Label><h1><b>Add Question</b></h1></Form.Label>
-        <Form.Row>
-          <Col>
-            <Form.Group as={Row}>
-              <Form.Label column sm={3}>Difficulty</Form.Label>
-              <Col sm={9}>
-                <Form.Control as="select">
-                  <option>Easy</option>
-                  <option>Medium</option>
-                  <option>Hard</option>
-                </Form.Control>
-              </Col>
-            </Form.Group>
-          </Col>
-
-          <Col>
-            <Form.Group as={Row}>
-              <Form.Label column sm={3}>Type</Form.Label>
-              <Col sm={9}>
-                <Form.Control as="select">
-                  <option>Multiple Choice</option>
-                  <option>Short Answer</option>
-                </Form.Control>
-              </Col>
-            </Form.Group>
-          </Col>
-          
-          <Col>
-            <Form.Group as={Row}>
-              <Form.Label column sm={3}># Points</Form.Label>
-              <Col sm={9}>
-                <Form.Control type="text" placeholder="1" />
-              </Col>
-            </Form.Group>
-          </Col>
-        </Form.Row>
-
-        <Form.Row>
-          <Col sm={9}>
-            <Form.Group>
-              <Form.Label>Question</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-          </Col>
-          <Col sm={3}>
-            <Form.Group>
-              <Form.File label="Image" />
-            </Form.Group>
-          </Col>
-          </Form.Row>
+         <QuestionDetails />
         <Form.Label><h3><b>Options</b></h3></Form.Label>
         <Form.Label className="float-right">Correct?</Form.Label>
       <Form.Group as={Row}>
@@ -101,7 +55,7 @@ export default function AddQuestion(){
         </Col>
       </Form.Group>
       <Form.Group as={Row}>
-        <Form.Label column sm={1}>Option 4</Form.Label>
+        <Form.Label column sm={1}>Option 5</Form.Label>
         <Col sm={10}>
           <Form.Control type="text" />
         </Col>
@@ -114,6 +68,48 @@ export default function AddQuestion(){
       <Button className="mr-3">Duplicate Question</Button>
       <Button className="mr-3">Quit without Saving</Button>
       </Form>
+    </Tab>
+    <Tab eventKey="shortanswer" title="Short Answer">
+      <Form style={formStyle}>
+         <QuestionDetails />
+        <Form.Label><h3><b>Correct Answers</b></h3></Form.Label>
+      <Form.Group as={Row}>
+        <Form.Label column sm={1}>Answer 1</Form.Label>
+        <Col sm={11}>
+          <Form.Control type="text" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row}>
+        <Form.Label column sm={1}>Answer 2</Form.Label>
+        <Col sm={11}>
+          <Form.Control type="text" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row}>
+        <Form.Label column sm={1}>Answer 3</Form.Label>
+        <Col sm={11}>
+          <Form.Control type="text" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row}>
+        <Form.Label column sm={1}>Answer 4</Form.Label>
+        <Col sm={11}>
+          <Form.Control type="text" />
+        </Col>
+      </Form.Group>
+      <Form.Group as={Row}>
+        <Form.Label column sm={1}>Answer 5</Form.Label>
+        <Col sm={11}>
+          <Form.Control type="text" />
+        </Col>
+      </Form.Group>
+      <Button type="submit" className="mr-3">Save and Quit</Button>
+      <Button className="mr-3">Add Another Question</Button>
+      <Button className="mr-3">Duplicate Question</Button>
+      <Button className="mr-3">Quit without Saving</Button>
+      </Form>
+</Tab>
+</Tabs>
     </Container>
   );
 }
