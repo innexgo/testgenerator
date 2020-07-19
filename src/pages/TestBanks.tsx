@@ -35,7 +35,7 @@ var columns:any = [
       {
         icon: 'edit',
         tooltip: 'Edit',
-        onClick: (event) => window.location.href='/testbanks'
+        onClick: (event) => window.location.href='/edittestbank'
       },
       {
         icon: 'archive',
