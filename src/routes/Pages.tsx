@@ -10,6 +10,7 @@ import Logout from "../pages/Logout";
 import ForgotPassword from "../pages/ForgotPassword";
 import AssignTest from "../pages/AssignTest";
 import CurrentTests from "../pages/CurrentTests";
+import EditTestBank from "../pages/EditTestBank";
 import EmailTest from "../pages/EmailTest";
 import StudentsToTest from "../pages/StudentsToTest";
 import TestBanks from "../pages/TestBanks";
@@ -31,6 +32,7 @@ const Pages = () => {
       <LoggedInRoute path="/logout" exact={true} component={Logout} />
       <LoggedInRoute path="/assigntest" exact={true} component={AssignTest} />
       <LoggedInRoute path="/currenttests" exact={true} component={CurrentTests} />
+      <LoggedInRoute path="/edittestbank" exact={true} component={EditTestBank} />
       <LoggedInRoute path="/emailtest" exact={true} component={EmailTest} />
       <LoggedInRoute path="/studentstotest" exact={true} component={StudentsToTest} />
       <LoggedInRoute path="/testbanks" exact={true} component={TestBanks} />

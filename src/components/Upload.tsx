@@ -10,8 +10,8 @@ export default function TestSelection() {
 
     var data:any = [
       {requirements: 'Upload a .csv/.xlsx (Microsoft Excel) file.'},
-      {requirements: 'If you are uploading classes, format the data as such: <b>Class Name, Course, Description</b>'},
-      {requirements: 'Upload a .csv/.xlsx (Microsoft Excel) file.'}
+      {requirements: 'If you are uploading classes, format the data as such: Class Name, Course, Description'},
+      {requirements: 'If you are uploading students, format the data as such: Period, Last Name, First Name, School Student ID, Email'}
     ];
 
     var selectedRowID: any =null;
