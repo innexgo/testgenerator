@@ -42,7 +42,7 @@ export default function CurrentTestsDashboard() {
       //Change onClick: (event) once create-a-test page completed.
       actions={[
         {
-          icon: 'add_box',
+          icon: 'add',
           tooltip: 'New Test',
           isFreeAction: true,
           onClick: (event) => window.location.href='/testreport'
