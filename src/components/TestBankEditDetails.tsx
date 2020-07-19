@@ -10,7 +10,6 @@ export default function TestBankDetails(props:any){
               <InputGroup.Text>Test Bank Name</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
-              readOnly
               defaultValue='APCS-A unit 1'//plug in actual test name
             />
           </InputGroup>
@@ -33,7 +32,6 @@ export default function TestBankDetails(props:any){
               <InputGroup.Text>Description</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
-              readOnly
               defaultValue="CSA ch 4 - 1D" //plug in actual test name
             />
           </InputGroup>

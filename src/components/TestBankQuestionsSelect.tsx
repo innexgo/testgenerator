@@ -65,6 +65,7 @@ export default function TestBankQuestionsTable(props:any) {
           backgroundColor: (selectedRowID === rowData.tableData.id) ? '#EEE' : '#FFF'
         }),
         filtering: true,
+        selection: true,
         headerStyle: {
           backgroundColor: '#990000',
           color: '#FFF',
