@@ -11,7 +11,7 @@ export default function AddQuestion(){
   };
   return (
     <Container fluid>
-      <TestBankDetails/>
+      <TestBankDetails canEdit={false}/>
       <Tabs defaultActiveKey="multiplechoice" id="tabs">
         <Tab eventKey="multiplechoice" title="Multiple Choice">
       <Form style={formStyle}>

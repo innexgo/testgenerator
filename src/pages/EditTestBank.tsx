@@ -1,12 +1,12 @@
 import React from 'react';
 import TestBankQuestionsTable from '../components/TestBankQuestionsTable';
-import TestBankEditDetails from '../components/TestBankEditDetails';
+import TestBankDetails from '../components/TestBankDetails';
 import { Container, Row, Col, InputGroup, FormControl, Table, Button } from 'react-bootstrap';
 
 export default function EditTestBank(){
   return (
     <Container fluid>
-        <TestBankEditDetails />
+        <TestBankDetails canEdit={true}/>
         <Row>
         <Col>
         <Table variant="dark" bordered>
@@ -21,10 +21,10 @@ export default function EditTestBank(){
         </Col>
         <Col>
         <Button className="float-right ml-3" variant="primary">Submit</Button>
-        <Button className="float-right " href="/TestBankCopy" variant="primary">Copy Questions from Another Test Bank</Button>
+        <Button className="float-right " variant="primary">Copy Questions from Another Test Bank</Button>
         </Col>
       </Row>
-      <TestBankQuestionsTable selectable={false}/>
+      <TestBankQuestionsTable />
     </Container>
   );
 }

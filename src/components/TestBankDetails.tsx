@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, InputGroup, FormControl } from 'react-bootstrap';
 
 export default function TestBankDetails(props:any){
+  const editable:boolean = props.canEdit;
   return (
           <Row>
         <Col>
@@ -10,7 +11,7 @@ export default function TestBankDetails(props:any){
               <InputGroup.Text>Test Bank Name</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
-              readOnly
+              {...editable===true ? '' : 'readOnly'}
               defaultValue='APCS-A unit 1'//plug in actual test name
             />
           </InputGroup>
@@ -33,7 +34,7 @@ export default function TestBankDetails(props:any){
               <InputGroup.Text>Description</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
-              readOnly
+              {...editable===true ? 'readOnly' : 'readOnly'}
               defaultValue="CSA ch 4 - 1D" //plug in actual test name
             />
           </InputGroup>
