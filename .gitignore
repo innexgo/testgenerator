@@ -8,9 +8,6 @@ node_modules/
 # testing
 /coverage
 
-# production
-/build
-
 # misc
 .DS_Store
 .env.local
@@ -21,3 +18,40 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Our own stuff
+/innexgo.sql
+/.syntastic_javac_config
+/.vscode/
+
+# Do not include node_modules
+node_modules/
+
