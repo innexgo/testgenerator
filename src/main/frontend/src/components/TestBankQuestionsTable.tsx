@@ -4,7 +4,7 @@ import './alltest_icons.css'
 import { ListGroup } from 'react-bootstrap';
 
 
-export default function TestBankQuestionsTable(props:any) {
+export default function TestBankQuestionsTable() {
         var columns:any = [
         {title: 'Difficulty', field: 'difficulty'},
         {title: 'question', field: 'question'},

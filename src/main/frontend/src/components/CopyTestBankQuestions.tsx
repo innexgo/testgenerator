@@ -28,7 +28,7 @@ export default function CopyTestBankQuestions() {
         {
           icon: 'library_add_check',
           tooltip: 'Select Questions',
-          onClick: (event) => window.location.href='/copyselectquestions'
+          onClick: (event) => window.location.href='/copytestbankquestions'
         },
         {
           icon: 'library_add',
