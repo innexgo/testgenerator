@@ -19,6 +19,7 @@ import EditTestBank from "../pages/EditTestBank";
 import AddQuestion from "../pages/AddQuestion";
 import CopySelectedQuestions from "../pages/CopySelectedQuestions";
 import TestReport from "../pages/TestReport";
+import ClassReport from "../pages/ClassReport";
 
 import LoggedInRoute from "./LoggedInRoute";
 import LoggedOutRoute from "./LoggedOutRoute";
@@ -44,6 +45,7 @@ const Pages = () => {
       <LoggedInRoute path="/addquestion" exact={true} component={AddQuestion} />
       <LoggedInRoute path="/copyselectedquestions" exact={true} component={CopySelectedQuestions} />
       <LoggedInRoute path="/testreport" exact={true} component={TestReport} />
+      <LoggedInRoute path="/classreport" exact={true} component={ClassReport} />
     </Switch>
   );
 };
