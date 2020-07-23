@@ -177,7 +177,7 @@ input[type="number"] {
 }
 
 .btn--primary {
-  background-color: #258aff;
+  background-color: #990000ff;
   color: #FFF;
 }
 
@@ -188,12 +188,12 @@ input[type="number"] {
 
 .btn-outlined--primary {
   background-color: transparent;
-  color: #258aff;
-  border: 2px solid #258aff;
+  color: #990000ff;
+  border: 2px solid #990000ff;
 }
 
 .btn-outlined--primary:hover {
-  background-color: #258aff;
+  background-color: #990000ff;
   color: #fff;
 }
 

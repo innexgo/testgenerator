@@ -17,7 +17,7 @@ const sideBarBox = { /*the colored container*/
   backgroundColor: '#e6e7e8', 
   margin: '3%', 
   borderRadius: '20px', 
-  boxShadow: '5px 7px #daa520ff'
+  boxShadow: '5px 7px #990000ff'
 }
 
 const sideBarText = {

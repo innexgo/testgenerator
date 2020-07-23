@@ -14,7 +14,7 @@ const secondhalf = {
 const boxOne = {
   backgroundColor: '#e6e7e8',
   borderRadius: '20px',
-  boxShadow: '5px 7px #daa520ff',
+  boxShadow: '5px 7px #990000ff',
   marginLeft: '18%',
   marginRight: '5%'
 };

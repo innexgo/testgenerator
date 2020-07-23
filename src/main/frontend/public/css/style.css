@@ -82,7 +82,7 @@
 }
 
 .main-menu > li > a:hover {
-  color: #258aff;
+  color: #990000ff; /*original 258aff*/
 }
 
 @media (min-width: 992px) {
@@ -140,7 +140,7 @@
 
 @media (min-width: 992px) {
   .main-menu .menu-dropdown .single-item:hover a h3 {
-    color: #258aff;
+    color: #990000ff; /*original 258aff*/
   }
 }
 
@@ -219,7 +219,7 @@
   width: 137px;
   height: 40px;
   border-radius: 3px;
-  background-color: #258aff;
+  background-color: #990000ff; /*original 258aff*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,7 +774,7 @@ ul.compatible-list li:hover {
 .content-small-card .card-icon {
   font-size: 32px;
   width: 100px;
-  color: #258aff;
+  color: #daa520ff; /*origianl 258aff*/
   text-align: center;
   margin-top: 4px;
 }
@@ -1011,7 +1011,7 @@ ul.compatible-list li:hover {
 .content-list li span i {
   font-size: inherit;
   font-weight: 900;
-  color: #258aff;
+  color: #990000ff; /*original 258aff*/
   position: relative;
   top: 4px;
 }
@@ -1117,7 +1117,7 @@ ul.compatible-list li:hover {
   width: 67px;
   height: 67px;
   border-radius: 5px;
-  background: #258aff;
+  background: #990000ff; /*original 258aff*/
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1176,7 +1176,7 @@ ul.compatible-list li:hover {
 
 .feature-widget:hover .widget-icon {
   background: #fff;
-  color: #258aff;
+  color: #990000ff; /*original 258aff*/
 }
 
 .feature-widget:hover .widget-icon i {
@@ -1298,7 +1298,7 @@ ul.compatible-list li:hover {
   content: '';
   left: 0;
   top: 0;
-  background: #258aff;
+  background: #990000ff; /*original 258aff*/
   height: 100%;
 }
 
@@ -1397,7 +1397,7 @@ ul.compatible-list li:hover {
   height: 60px;
   border-radius: 3px;
   border: 2px solid #ffffff;
-  background-color: #258aff;
+  background-color: #990000ff; /*original 258aff*/
 }
 
 .cta-content .cta-btn .btn i {
@@ -1407,7 +1407,7 @@ ul.compatible-list li:hover {
 
 .cta-content .cta-btn .btn:hover {
   background: #fff;
-  color: #258aff;
+  color: #990000ff;
 }
 
 .cta-content .cta-btn .extra-info-text {
@@ -1468,7 +1468,7 @@ ul.compatible-list li:hover {
 .footer-nav .nav-item:after {
   position: absolute;
   content: '';
-  background-color: #0d41e9;
+  background-color: #daa520ff; /*original #0d41e9*/
   left: 0;
   width: 45px;
   height: 2px;
