@@ -4,7 +4,9 @@ import ExternalLayout from '../components/ExternalLayout';
 function Pricing() {
   return(
     <ExternalLayout>
-      <h1>Start code here</h1>
+      <div style={{marginLeft: '8%', marginRight: '8%'}}>
+        <h1 style={{textAlign: 'center'}}>Pricing</h1>
+      </div>
     </ExternalLayout>
 );
 }
