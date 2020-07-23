@@ -3,6 +3,8 @@ import { connect} from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
 import Home from "../pages/Home";
+import Features from "../pages/Features";
+import Pricing from "../pages/Pricing";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Dashboard from "../pages/Dashboard";
@@ -28,6 +30,8 @@ const Pages = () => {
   return (
     <Switch>
       <Route path="/" exact={true} component={Home} />
+      <Route path="/features" exact={true} component={Features} />
+      <Route path="/pricing" exact={true} component={Pricing} />
       <LoggedOutRoute path="/login" exact={true} component={Login} />
       <LoggedOutRoute path="/register" exact={true} component={Register} />
       <LoggedOutRoute path="/forgot-password" exact={true} component={ForgotPassword} />
