@@ -193,7 +193,7 @@
 
 .header-btns .btn-1 {
   color: #FFFFFF;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -233,7 +233,7 @@
 
 .header-btns .btn-2 a {
   color: #ffffff;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -398,7 +398,7 @@
 }
 
 .main-title {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Questrial', sans-serif;
   color: #1f1f1f;
   font-size: 38px;
   line-height: 60px;
@@ -476,7 +476,7 @@
 
 .hero-content-wrapper p {
   color: #222f3f;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 21px;
   font-weight: 400;
   letter-spacing: -0.4px;
@@ -501,7 +501,7 @@
 
 .compatible span {
   color: #8e8e8e;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.4px;
@@ -729,7 +729,7 @@ ul.compatible-list li:hover {
 
 .content-text h2 {
   padding-bottom: 25px;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 800;
 }
 
@@ -774,7 +774,7 @@ ul.compatible-list li:hover {
 .content-small-card .card-icon {
   font-size: 32px;
   width: 100px;
-  color: #daa520ff; /*origianl 258aff*/
+  color: #990000ff; /*origianl 258aff*/
   text-align: center;
   margin-top: 4px;
 }
@@ -872,7 +872,7 @@ ul.compatible-list li:hover {
 
 .content-right-content h2, .content-left-content h2 {
   padding-bottom: 25px;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 800;
   line-height: 44px;
 }
@@ -1065,7 +1065,7 @@ ul.compatible-list li:hover {
 }
 
 .section-title h2 {
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 40px;
@@ -1331,7 +1331,7 @@ ul.compatible-list li:hover {
 
 .cta-content h2 {
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 700;
   margin-bottom: 27px;
   font-size: 40px;

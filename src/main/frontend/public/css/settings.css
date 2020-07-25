@@ -157,7 +157,7 @@ input[type="number"] {
 
 /* Buttons */
 .btn {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Barlow', sans-serif;
   letter-spacing: -1.12px;
   font-weight: 700;
   font-size: 18px;
@@ -182,7 +182,7 @@ input[type="number"] {
 }
 
 .btn--primary:hover {
-  background-color: rgba(37, 138, 255, 0.8);
+  background-color: #980000ff; /*version of 990000ff*/
   color: #fff;
 }
 
