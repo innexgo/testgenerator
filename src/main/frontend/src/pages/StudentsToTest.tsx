@@ -1,11 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Card, Container, Col, Row} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 import TestSelection from '../components/TestSelection';
 import TestTimingPerClass from '../components/TestTimingPerClass';
 import SelectStudentsForTest from '../components/SelectStudentsForTest';
-import '../components/sidenav.css';
-
 
 function TestReport() {
   return (

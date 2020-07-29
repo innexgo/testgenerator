@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Card, Container, Col, Row} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 import CurrentTestsDashboard from '../components/CurrentTestsDashboard';
-import '../components/sidenav.css';
 
 
 function TestReport() {

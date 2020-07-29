@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SvgIconComponent, Settings, Home, ExitToApp, BarChart, Search, People, Menu } from '@material-ui/icons';
 
+// Bootstrap CSS & Js
+import '../style/dashboard.scss';
+import 'bootstrap/dist/js/bootstrap.js'
+import 'popper.js/dist/popper.js'
+
 const iconStyle = {
   width: "2rem",
   height: "2rem",
@@ -35,7 +40,7 @@ interface DashboardHeaderState {
   sidebarCollapsed: boolean;
 }
 
-class SideBar extends React.Component<AuthenticatedComponentProps, DashboardHeaderState> {
+class DashboardLayout extends React.Component<AuthenticatedComponentProps, DashboardHeaderState> {
 
   constructor(props: AuthenticatedComponentProps) {
     super(props);
@@ -115,4 +120,4 @@ class SideBar extends React.Component<AuthenticatedComponentProps, DashboardHead
   }
 }
 
-export default SideBar;
+export default DashboardLayout;

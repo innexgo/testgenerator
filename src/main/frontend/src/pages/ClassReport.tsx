@@ -1,11 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Card, Container, Col, Row} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 import ClassStatistics from '../components/ClassStatistics';
 import StudentResults from '../components/StudentResults';
 import AllTestOccurrences from '../components/AllTestOccurrences';
 import ClassCharts from '../components/ClassCharts';
-import '../components/sidenav.css';
 
 function ClassReport() {
   return (

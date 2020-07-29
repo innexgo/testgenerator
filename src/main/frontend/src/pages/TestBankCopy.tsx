@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Card, Container, Col, Row} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 import CopyTestBankQuestions from '../components/CopyTestBankQuestions';
 import TestBankSelection from '../components/TestBankSelection';
-import '../components/sidenav.css';
 
 
 function TestReport() {
