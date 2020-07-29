@@ -85,7 +85,7 @@ function Home() {
                                     <i className="icon icon-settings"></i>
                                 </div>
                                 <div className="card-content">
-                                    <h5>Help Students Learn from their Mistakes</h5>
+                                    <h5>Help students learn from their mistakes</h5>
                                     <p>
                                         Each student receives a customized report on what they got correct and wrong, delivered straight to their email.
                                     </p>
@@ -147,8 +147,8 @@ function Home() {
                                         <i className="icon icon-edit-72"></i>
                                     </div>
                                     <div className="content">
-                                        <h5>Easy to Use</h5>
-                                        <p>Simplistic and Intuitive Design, with easy contact if you ever need help.</p>
+                                        <h5>Quickly create tests</h5>
+                                        <p>A variety of question types &#38; test making tools that simplify the process.</p>
                                     </div>
                                 </div>
                             </div>
@@ -158,8 +158,8 @@ function Home() {
                                         <i className="icon icon-layers-3"></i>
                                     </div>
                                     <div className="content">
-                                        <h5>Title</h5>
-                                        <p>Description</p>
+                                        <h5>Manage test banks</h5>
+                                        <p>Create, edit, use, store, &#38; share tests, all in one place.</p>
                                     </div>
                                 </div>
                             </div>
@@ -169,8 +169,8 @@ function Home() {
                                         <i className="icon icon-tablet-mobile"></i>
                                     </div>
                                     <div className="content">
-                                        <h5>Title</h5>
-                                        <p>Description</p>
+                                        <h5>Simple user interface</h5>
+                                        <p>Simplistic and intuitive portal, with easy access to both tests &#38; analytics.</p>
                                     </div>
                                 </div>
                             </div>
@@ -180,8 +180,8 @@ function Home() {
                                         <i className="icon icon-book-open-2"></i>
                                     </div>
                                     <div className="content">
-                                        <h5>Title</h5>
-                                        <p>Description</p>
+                                        <h5>Automatic grading</h5>
+                                        <p>Tests are automatically scored after submission.</p>
                                     </div>
                                 </div>
                             </div>
@@ -191,8 +191,8 @@ function Home() {
                                         <i className="icon icon-webpage"></i>
                                     </div>
                                     <div className="content">
-                                        <h5>Title</h5>
-                                        <p>Description</p>
+                                        <h5>Assigning & taking tests is straightforward</h5>
+                                        <p>Any students can take your test, at any time that you assign. No account needed.</p>
                                     </div>
                                 </div>
                             </div>
@@ -202,8 +202,8 @@ function Home() {
                                         <i className="icon icon-l-settings"></i>
                                     </div>
                                     <div className="content">
-                                      <h5>Title</h5>
-                                        <p>Description</p>
+                                      <h5>Personalized support</h5>
+                                        <p>Our team is always available to answer any questions you may have.</p>
                                     </div>
                                 </div>
                             </div>
@@ -288,12 +288,13 @@ function Home() {
                     <div className="row justify-content-center">
                         <div className="col-xl-7 col-lg-8">
                             <div className="cta-content">
-                              <span className="title-small-text">Want to give "Product Name" a try?</span>
-                                <h2>Try it free now!</h2>
-                                <p>Get a one-month free trial now. Cancel any time.</p>
+                              <span className="title-small-text">Want to give TG a try?</span>
+                              <br/><br/><br/>
+                                <h2>Try out these features for yourself!</h2>
+                                <p>Contact us to inquire about a free trial of TG.</p>
                                 <div className="cta-btn">
-                                    <a href="" className="btn btn-outlined--white btn-with-icon btn-height-60">
-                                            Start Trial</a>
+                                    <a href="pricing" className="btn btn-outlined--white btn-with-icon btn-height-60">
+                                            Contact</a> {/* current contact option is pricing page*/}
                                 </div>
 
                             </div>

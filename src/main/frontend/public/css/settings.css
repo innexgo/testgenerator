@@ -2,6 +2,9 @@
 /* Reset CSS */
 @import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Barlow:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +13,7 @@
 }
 
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Barlow', sans-serif; /*changed from Karla*/
   font-size: 14px;
   line-height: 1;
   color: #1f1f1f;
@@ -26,7 +29,8 @@ h6 {
   margin: 0;
   line-height: 1;
   font-weight: 700;
-}
+  font-family: 'Questrial'; /*similar to muli?*/
+};
 
 a,
 span {
@@ -153,7 +157,7 @@ input[type="number"] {
 
 /* Buttons */
 .btn {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Barlow', sans-serif;
   letter-spacing: -1.12px;
   font-weight: 700;
   font-size: 18px;
@@ -173,23 +177,23 @@ input[type="number"] {
 }
 
 .btn--primary {
-  background-color: #258aff;
+  background-color: #990000ff;
   color: #FFF;
 }
 
 .btn--primary:hover {
-  background-color: rgba(37, 138, 255, 0.8);
+  background-color: #980000ff; /*version of 990000ff*/
   color: #fff;
 }
 
 .btn-outlined--primary {
   background-color: transparent;
-  color: #258aff;
-  border: 2px solid #258aff;
+  color: #990000ff;
+  border: 2px solid #990000ff;
 }
 
 .btn-outlined--primary:hover {
-  background-color: #258aff;
+  background-color: #990000ff;
   color: #fff;
 }
 
