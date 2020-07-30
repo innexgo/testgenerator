@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SvgIconComponent, Settings, Home, ExitToApp, BarChart, Search, People, Menu } from '@material-ui/icons';
+import { SvgIconComponent, Settings, Home, ExitToApp, BarChart, Storage, Assignment, Menu } from '@material-ui/icons';
 
 // Bootstrap CSS & Js
 import '../style/dashboard.scss';
@@ -96,12 +96,12 @@ class DashboardLayout extends React.Component<AuthenticatedComponentProps, Dashb
                 	<h6>{this.props.apiKey.user.name}</h6>
               	</div>
           }
-          <SidebarEntry label="Dashboard" href="/dashboard" collapsed={collapsed} icon={Home} />
-          <SidebarEntry label="Find Student" href="/findstudent" collapsed={collapsed} icon={Search} />
-          <SidebarEntry label="My Classes" href="/classes" collapsed={collapsed} icon={People} />
-          <SidebarEntry label="Reports" href="/reports" collapsed={collapsed} icon={BarChart} />
+          <SidebarEntry label="Home" href="/dashboard" collapsed={collapsed} icon={Home} />
+          <SidebarEntry label="Test Banks" href="/testbanks" collapsed={collapsed} icon={Storage} />
+          <SidebarEntry label="Tests" href="/tests" collapsed={collapsed} icon={Assignment} />
+          <SidebarEntry label="Reports" href="/reportsoverview" collapsed={collapsed} icon={BarChart} />
           <div style={sidebarBottom}>
-            <SidebarEntry label="Settings" href="/settings" collapsed={collapsed} icon={Settings} />
+            <SidebarEntry label="Settings" href="/updateinformation" collapsed={collapsed} icon={Settings} />
             <button
               style={{ color: "#fff" }}
               type="button"

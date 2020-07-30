@@ -1,23 +1,19 @@
 import React from 'react';
 import DashboardLayout from '../components/DashboardLayout';
 import {Container, Col, Row} from 'react-bootstrap';
-import TestSchedulerForAssignment from '../components/TestSchedulerForAssignment';
-import TestSelection from '../components/TestSelection';
+import TestBanksChoose from '../components/TestBanksChoose';
 
 
-function AssignTest(props: AuthenticatedComponentProps) {
+function TestChooseTestBank(props: AuthenticatedComponentProps) {
   return <DashboardLayout {...props}>
     <div className="App" style={{ marginTop: "1.5rem" }}>
       <Container fluid>
         <Row>
-          <Col><TestSelection /></Col>
-        </Row>
-        <Row>
-          <Col><TestSchedulerForAssignment /></Col>
+          <Col><TestBanksChoose /></Col>
         </Row>
       </Container>
     </div>
   </DashboardLayout>
 };
 
-export default AssignTest;
+export default TestChooseTestBank;

@@ -29,7 +29,7 @@ export default function TestSchedulerForAssignment() {
         {
           icon: 'schedule',
           tooltip: 'Schedule for Selected Students',
-          onClick: (event) => window.location.href='/assigntest'
+          onClick: (event) => window.location.href='/studentstotest'
         },
       ]}
       onRowClick={(

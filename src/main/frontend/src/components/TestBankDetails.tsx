@@ -3,7 +3,7 @@ import { Row, Col, InputGroup, FormControl } from 'react-bootstrap';
 
 export default function TestBankDetails(props:any){
   return (
-          <Row>
+      <Row>
         <Col>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
@@ -14,7 +14,7 @@ export default function TestBankDetails(props:any){
               defaultValue='APCS-A unit 1'//plug in actual test name
             />
           </InputGroup>
-          
+
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text>Date Created</InputGroup.Text>
@@ -47,6 +47,6 @@ export default function TestBankDetails(props:any){
             />
           </InputGroup>
         </Col>
-        </Row>
+      </Row>
   );
 }

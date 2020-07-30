@@ -41,7 +41,7 @@ export default function SelectStudentsForTest() {
         {
           icon: 'schedule',
           tooltip: 'Schedule Test for Select Students',
-          onClick: (event) => window.location.href='/selectstudentsfortest'
+          onClick: (event) => window.location.href='/tests'
         },
       ]}
       options={{

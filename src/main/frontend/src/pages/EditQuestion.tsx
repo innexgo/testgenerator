@@ -5,7 +5,7 @@ import QuestionDetails from '../components/QuestionDetails';
 import { Container, Form, Col, Button, Row, Tab, Tabs } from 'react-bootstrap';
 import CSS from 'csstype';
 
-export default function AddQuestion(props: AuthenticatedComponentProps) {
+export default function EditQuestion(props: AuthenticatedComponentProps) {
   const formStyle: CSS.Properties = {
     backgroundColor: 'white',
     padding: '2%',
@@ -65,7 +65,7 @@ export default function AddQuestion(props: AuthenticatedComponentProps) {
         </Col>
       </Form.Group>
       <Button type="submit" className="mr-3" href="/edittestbank">Save and Quit</Button>
-      <Button className="mr-3" href="/addquestion">Save and Add Another Question</Button>
+      <Button className="mr-3" href="/addquestion">Duplicate Question</Button>
       <Button className="mr-3" href="/edittestbank">Quit without Saving</Button>
       </Form>
     </Tab>

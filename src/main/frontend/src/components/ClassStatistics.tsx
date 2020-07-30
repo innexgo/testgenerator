@@ -12,6 +12,7 @@ export default function TestStatistics() {
         {title: 'Standard Deviation (%)', field: 'standardDeviation'},
     ];
 
+    // For Class Report, ONLY HAVE 1. For Test Report, HAVE ALL. 
     var data:any = [
       {class: '1 APCS-A', range: '31-99', mean: '62', median: '68', standardDeviation: '9'},
       {class: '4 APCS-A', range: '24-99', mean: '54', median: '60', standardDeviation: '14'},
@@ -21,7 +22,7 @@ export default function TestStatistics() {
 
   return (
     <MaterialTable title="Class Statistics"
-      style={{marginTop: '2rem'}}
+      style={{marginTop: '1.5rem'}}
       columns={columns}
       data={data}
       onRowClick={(

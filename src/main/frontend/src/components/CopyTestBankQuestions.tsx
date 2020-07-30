@@ -27,13 +27,13 @@ export default function CopyTestBankQuestions() {
       actions={[
         {
           icon: 'library_add_check',
-          tooltip: 'Select Questions',
-          onClick: (event) => window.location.href='/copyselectquestions'
+          tooltip: 'Copy Selected Questions',
+          onClick: (event) => window.location.href='/copyselectedquestions'
         },
         {
           icon: 'library_add',
           tooltip: 'Copy All Questions',
-          onClick: (event) => window.location.href='/copytestbankquestions'
+          onClick: (event) => window.location.href='/edittestbank'
         },
       ]}
       onRowClick={(
@@ -42,7 +42,6 @@ export default function CopyTestBankQuestions() {
       options={{
         pageSize: 6,
         pageSizeOptions: [],
-        selection: true,
         rowStyle: rowData => ({
           backgroundColor: (selectedRowID === rowData.tableData.id) ? '#EEE' : '#FFF'
         }),

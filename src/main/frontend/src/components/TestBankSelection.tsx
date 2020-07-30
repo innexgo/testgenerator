@@ -9,10 +9,13 @@ export default function CopyTestBankQuestions() {
         {title: 'Description', field: 'description'},
         {title: 'Date Created', field: 'dateCreated', type: 'date' },
         {title: 'Date Last Modified', field: 'dateLastModified', type: 'date' },
+        {title: '# Easy', field: 'numEasy'},
+        {title: '# Medium', field: 'numMedium'},
+        {title: '# Hard', field: 'numHard'},
     ];
 
   var data:any = [
-      { name: 'CSAch4', description: 'CSA Barron ch 4', dateCreated: '08/05/20', dateLastModified: '09/03/20'},
+      { name: 'CSAch4', description: 'CSA Barron ch 4', dateCreated: '08/05/20', dateLastModified: '09/03/20', numEasy: '23', numMedium: '12', numHard: '6' },
     ];
 
   var selectedRowID: any =null;

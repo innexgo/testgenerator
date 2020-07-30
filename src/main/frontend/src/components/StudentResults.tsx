@@ -21,14 +21,14 @@ export default function StudentResults() {
 
   return (
     <MaterialTable title="Student Results"
-      style={{marginBottom: '2rem'}}
+      style={{marginTop: '1.5rem'}}
       columns={columns}
       data={data}
       onRowClick={(
         (evt, selectedRow: any) => selectedRowID = selectedRow?.tableData?.id
       )}
       options={{
-        pageSize: 5,
+        pageSize: 3,
         pageSizeOptions: [],
         rowStyle: rowData => ({
           backgroundColor: (selectedRowID === rowData.tableData.id) ? '#EEE' : '#FFF'

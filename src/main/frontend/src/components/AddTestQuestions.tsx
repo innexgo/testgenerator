@@ -4,7 +4,7 @@ import './alltest_icons.css'
 import { ListGroup } from 'react-bootstrap';
 
 
-export default function TestBankQuestionsTable(props:any) {
+export default function AddTestQuestions(props:any) {
         var columns:any = [
         {title: 'Difficulty', field: 'difficulty'},
         {title: 'question', field: 'question'},
@@ -20,24 +20,6 @@ export default function TestBankQuestionsTable(props:any) {
         <MaterialTable title="Questions"
         columns={columns}
         data={data}
-        actions={[
-          {
-            icon: 'add',
-            tooltip: 'New Question',
-            isFreeAction: true,
-            onClick: (event) => window.location.href='/addquestion'
-          },
-          {
-            icon: 'edit',
-            tooltip: 'Edit',
-            onClick: (event) => window.location.href='/editquestion',
-          },
-          {
-            icon: 'content_copy',
-            tooltip: 'Duplicate',
-            onClick: (event) => window.location.href='/edittestbank',
-          },
-        ]}
       onRowClick={(
         (evt, selectedRow: any) => selectedRowID = selectedRow?.tableData?.id
       )}

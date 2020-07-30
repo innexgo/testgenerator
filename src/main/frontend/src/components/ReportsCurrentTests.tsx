@@ -37,30 +37,15 @@ export default function CurrentTestsDashboard() {
 
   return (
     <MaterialTable title="Current Tests"
+      style={{marginTop: "1.5rem"}}
       columns={columns}
       data={data}
       //Change onClick: (event) once create-a-test page completed.
       actions={[
         {
-          icon: 'add',
-          tooltip: 'New Test',
-          isFreeAction: true,
-          onClick: (event) => window.location.href='/testchoosetestbank'
-        },
-        {
-          icon: 'edit',
-          tooltip: 'Edit',
-          onClick: (event) => window.location.href='/edittest'
-        },
-        {
-          icon: 'archive',
-          tooltip: 'Archive',
-          onClick: (event) => window.location.href='/tests'
-        },
-        {
-          icon: 'schedule',
-          tooltip: 'Schedule',
-          onClick: (event) => window.location.href='/assigntest'
+          icon: 'analytics',
+          tooltip: 'See Test Report',
+          onClick: (event) => window.location.href='/testreport'
         },
       ]}
       onRowClick={(
@@ -74,7 +59,7 @@ export default function CurrentTestsDashboard() {
         }),
         filtering: true,
         headerStyle: {
-          backgroundColor: '#990000',
+          backgroundColor: '#121212',
           color: '#FFF',
         }
       }}

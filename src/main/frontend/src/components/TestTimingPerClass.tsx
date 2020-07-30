@@ -16,14 +16,14 @@ export default function TestTimingPerClass() {
 
   const columns:any = [
         {title: 'Class Name', field: 'name'},
-        {title: 'Start Date/Time', field: 'startDate', type: 'datetime'},
-        {title: 'End Date/Time', field: 'endDate', type: 'datetime'},
+        {title: 'Start Date & Time', field: 'startDate', type: 'datetime'},
+        {title: 'Time Limit (Minutes)', field: 'timeLimit', type: 'numeric'},
   ];
 
   const [data, setData] = useState([
-      {name: '1-APCS-A', startDate: '08/31/20 9:30 a.m.', endDate: '08/31/20 10:20 a.m.'},
-      {name: '2-APCS-A', startDate: '08/31/20 10:35 a.m.', endDate: '08/31/20 11:25 a.m.'},
-      {name: '4-APCS-A', startDate: '08/31/20 12:00 p.m.', endDate: '08/31/20 12:50 p.m.'},
+      {name: '1-APCS-A', startDate: '', timeLimit: '30'},
+      {name: '2-APCS-A', startDate: '', timeLimit: '30'},
+      {name: '4-APCS-A', startDate: '', timeLimit: '25'},
   ]);
 
   var selectedRowID: any =null;
