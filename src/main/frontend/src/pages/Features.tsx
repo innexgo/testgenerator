@@ -16,7 +16,7 @@ const boxoneImage = {
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
   backgroundRepeat: 'no-repeat',
-  opacity: '95%',
+  opacity: '100%',
   height: '325px'
 };
 
@@ -33,10 +33,12 @@ const featuresTable = { /*both tables use this*/
 }
 
 const sideBarBox = { /*the colored container*/
-  backgroundColor: '#e6e7e8', 
+  backgroundColor: '#ffffff', 
   margin: '3%', 
   borderRadius: '20px', 
-  boxShadow: '5px 7px #990000ff'
+  boxShadow: '5px 7px #990000ff',
+  border: 'groove',
+  borderColor: '#e6e7e8'
 }
 
 const sideBarText = {
@@ -47,12 +49,12 @@ const sideBarText = {
 
 function Features() {
   return(
-    <div style={{backgroundColor: '#f2f3f4'}}>
+    <div style={{backgroundColor: '#ffffff'}}>
       <ExternalLayout>
         <div style={boxoneImage}>
         <br/><br/><br/><br/><br/>
-          <h1 style={{textAlign: 'center', marginBottom: '2%', color: 'white', textShadow: '2px 2px #990000ff'}}>We like to save time, too.</h1>
-          <p style={{textAlign: 'center', fontSize: '21px', color: 'white', textShadow: '1px 1px #990000ff', marginLeft: '15%', marginRight: '15%'}}>Test Generator comes with a variety of features for creating, assigning, storing, &#38; analyzing tests, saving you from hours of grading &#38; figuring out what to teach.</p>
+          <h1 style={{textAlign: 'center', marginBottom: '2%', color: 'white'}}>We like to save time, too.</h1>
+          <p style={{textAlign: 'center', fontSize: '21px', color: 'white', marginLeft: '15%', marginRight: '15%'}}>Test Generator comes with a variety of features for creating, assigning, storing, &#38; analyzing tests, saving you from hours of grading &#38; figuring out what to teach.</p>
         </div>
         <br/>
 
@@ -86,7 +88,7 @@ function Features() {
                   </tr>
                 </tbody>
               </Table>
-              <br /><br />
+              <br /><br /><br/><br/><br/><br/>
 
               <h2 style={{textAlign: 'center', marginLeft: '40%'}}>Reports &#38; Analytics</h2>
               <br/>
@@ -112,8 +114,9 @@ function Features() {
               <br/><br/>
             </div>
           </div>
+        {/*ok the end div for the left half should go here but it doesn't work unless i put it at the bottom -_-*/}
 
-          <div style={{width: '78%', display: 'inline', marginRight: '4%'}}>
+          <div style={{display: 'inline', marginRight: '4%'}}>
             <br/>
             <div style={sideBarBox}>
               <div style={sideBarText}>
@@ -167,6 +170,14 @@ function Features() {
           </div>
           <br/><br/>
         </div>
+
+        <p style={{textAlign: 'center'}}>_______________________________________________________________</p>
+
+        <br/><br/>
+        <h4 style={{textAlign: 'center'}}>Want to learn more? Send us a message.</h4>
+        <p style={{textAlign: 'center', marginLeft: '20%', marginRight: '20%'}}>Test out the features TG has to offer.
+        </p>
+        <h5 style={{textAlign: 'center'}}>contact@innexgo.com</h5>
       </ExternalLayout>
     </div>
 );
