@@ -5,6 +5,7 @@ import {Tabs, Tab, Container} from 'react-bootstrap';
 import UpdateClasses from '../components/UpdateClasses';
 import UpdateStudents from '../components/UpdateStudents';
 import Upload from '../components/Upload';
+import UploadParse from '../components/UploadParse';
 
 function UpdateInformation(props: AuthenticatedComponentProps) {
   return <DashboardLayout {...props}>
@@ -19,6 +20,7 @@ function UpdateInformation(props: AuthenticatedComponentProps) {
             </Tab>
             <Tab eventKey="upload" title="Upload Classes/Students">
               <Upload />
+              <UploadParse />
             </Tab>
           </Tabs>
       </Container>
