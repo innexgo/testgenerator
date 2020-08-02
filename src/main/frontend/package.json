@@ -28,11 +28,12 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
-    "react-papaparse": "^3.5.0",
+    "react-papaparse": "^3.6.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "recharts": "^1.8.5",
+    "styled-components": "^5.1.1",
     "typeface-exo": "^0.0.61",
     "typeface-ubuntu": "^0.0.65",
     "typescript": "~3.9.6"

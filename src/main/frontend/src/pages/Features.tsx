@@ -41,7 +41,7 @@ class Features extends React.Component<FeaturesProps, FeaturesState> {
     let windowHeight = typeof window !== "undefined" ? window.innerHeight : 0;
 
     this.setState({ windowWidth, windowHeight });
-  }
+  };
 
   render() {
     const windowWidth = this.state.windowWidth;
