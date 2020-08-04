@@ -1,7 +1,7 @@
 import * as React from "react";
 import DashboardLayout from '../components/DashboardLayout';
 import Greeting from '../components/Greeting';
-import CurrentTestsDashboard from '../components/CurrentTestsDashboard';
+import DashboardLinks from '../components/DashboardLinks';
 
 interface State{
   windowWidth: number;
@@ -44,30 +44,24 @@ class Dashboard extends React.Component<AuthenticatedComponentProps, State> {
     } as React.CSSProperties;
 
     const column = {
-      float: tablet ? 'none' : 'left',
       width: tablet ? '100%' : '50%',
-      flex: tablet ? '0' : '50%',
+      /*flex: tablet ? '0' : '50%',*/
       position: tablet ? 'initial' : 'relative',
     } as React.CSSProperties;
 
-    const currentTestsStyle = {
-      marginTop: '2%',
-      marginBottom: '5%',
-      marginLeft: '4%',
-      marginRight: '4%',
-      backgroundColor: '#fff',
-      width: '100%',
+    const boxStyle = {
+      margin: '3%',
     };
 
     return <DashboardLayout {...this.props}>
       <div style={allStyle}>
         <div style={column}> {/*left column*/}
-          <Greeting/>
-          <div style={currentTestsStyle}><CurrentTestsDashboard/></div>
+          <div style={boxStyle}><Greeting/></div>
         </div>
         <div style={column}> {/*right column*/}
-          <p>peen</p>
+          <div style={boxStyle}><DashboardLinks/></div>
         </div>
+
 
 
 

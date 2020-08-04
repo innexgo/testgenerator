@@ -1,25 +1,32 @@
+/*TODO
+ - add a quote for login??
+*/
+
 import React from 'react';
 
-interface State{};
 interface Props{};
+interface State{};
 
-class Greeting extends React.Component<State, Props> {
-    constructor(Props: any) {
-        super(Props);
+class Greeting extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
     };
-
-    assignClick() {
-        window.location.replace("AssignTest");
-    }
-
-    createClick() {
-        window.location.replace("EditTest");
-    }
 
     render() {
         var hours = new Date().getHours();
         var greeting = "";
         var name = "Needs Name"; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+        var quotes = [
+            "‘Education is not the filling of a pot but the lighting of a fire.’ –W.B. Yeats",
+            "‘I cannot teach anybody anything, I can only make them think.’ –Socrates",
+            "‘A good teacher is like a candle – it consumes itself to light the way for others.’ –Mustafa Kemal Atatürk",
+            "‘Teachers have three loves: love of learning, love of learners, and the love of bringing the first two loves together.’–Scott Hayden",
+            "‘There is no failure. Only feedback.’–Robert Allen",
+            "‘A good teacher is one who makes himself progressively unnecessary.’ –Thomas Carruthers"
+        ];
+        var quotenum = Math.floor(Math.random() * 5);
+        var quote = quotes[quotenum];
 
         if(hours < 12) {
             greeting = "Good morning, "  + name + ".";
@@ -31,11 +38,7 @@ class Greeting extends React.Component<State, Props> {
             greeting = "Good evening, " + name + ".";
         }
 
-        const allStyle = { /*MARGINS wooooooooooooooooooooooooooooooo*/
-            marginTop: '2%',
-            marginBottom: '5%',
-            marginLeft: '4%',
-            marginRight: '4%',
+        const allStyle = {
             backgroundColor: '#fff',
             width: '100%',
         };
@@ -43,38 +46,14 @@ class Greeting extends React.Component<State, Props> {
         const contents = {
             margin: '3%'
         };
-        
-        const buttonStyleOne = {
-            fontSize: '14px',
-            marginLeft: '2%',
-            marginRight: '40px',
-        };
-
-        const buttonStyleTwo = {
-            fontSize: '14px',
-            marginRight: '2%',
-        };
-
-        function hoverStyle(e: any) {
-            e.target.style.color = "#990000ff"
-            e.target.style.textDecoration = "underline"
-        };
-
-        function offHoverStyle(p:any) {
-            p.target.style.color = "black"
-            p.target.style.textDecoration = "none"
-        };
 
         return (
             <div style={allStyle}>
-                <hr style={{borderColor: '#990000ff', borderWidth: '4px', margin: '0%'}}/>
+                <hr style={{borderColor: '#990000ff', borderWidth: '7px', margin: '0%'}}/>
                 <div style={contents}>
                     <p style={{fontSize: '24px', marginBottom: '0'}}>{greeting}</p>
-                    <p>What would you like to do today?</p>
-                    <button style={buttonStyleOne} onMouseOver={hoverStyle} onMouseLeave={offHoverStyle} onClick={this.assignClick.bind(this)}>
-                    Assign &#8594;</button>
-                    <button style={buttonStyleTwo} onMouseOver={hoverStyle} onMouseLeave={offHoverStyle} onClick={this.createClick.bind(this)}>
-                    Create &#8594;</button>
+                    <br/>
+                    <p style={{margin: '0', padding: '0', lineHeight: '20px'}}>{quote}</p>
                     <br/><br/>
                 </div>
             </div>
