@@ -1,61 +1,53 @@
-/*TODO
- - add a quote for login??
-*/
+/*add current events into this? possible?*/
 
 import React from 'react';
 
 interface Props{};
-interface State{};
+interface State{
+    name: string
+};
 
 class Greeting extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
+        this.state = {
+            name: "Needs Name"
+        }
     };
 
     render() {
+        var day = new Date();
         var hours = new Date().getHours();
         var greeting = "";
-        var name = "Needs Name"; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-        var quotes = [
-            "‘Education is not the filling of a pot but the lighting of a fire.’ –W.B. Yeats",
-            "‘I cannot teach anybody anything, I can only make them think.’ –Socrates",
-            "‘A good teacher is like a candle – it consumes itself to light the way for others.’ –Mustafa Kemal Atatürk",
-            "‘Teachers have three loves: love of learning, love of learners, and the love of bringing the first two loves together.’–Scott Hayden",
-            "‘There is no failure. Only feedback.’–Robert Allen",
-            "‘A good teacher is one who makes himself progressively unnecessary.’ –Thomas Carruthers"
-        ];
-        var quotenum = Math.floor(Math.random() * 5);
-        var quote = quotes[quotenum];
 
         if(hours < 12) {
-            greeting = "Good morning, "  + name + ".";
+            greeting = "Good morning,";
         }
-        else if(hours>=12 && hours<5) {
-            greeting = "Good afternoon, " + name + ".";
+        else if(hours>=12 && hours<17) {
+            greeting = "Good afternoon,";
         }
         else {
-            greeting = "Good evening, " + name + ".";
+            greeting = "Good evening,";
         }
 
         const allStyle = {
-            backgroundColor: '#fff',
-            width: '100%',
-        };
-
-        const contents = {
-            margin: '3%'
-        };
-
+            backgroundColor: 'white',
+            width: '90%',
+            padding: '3%',
+            marginBottom: '5px',
+            marginLeft: '3%',
+            marginRight: '3%',
+            borderLeftStyle: 'solid',
+            borderLeftColor: '#990000ff',
+            borderLeftWidth: '5px',
+        } as React.CSSProperties;
+        
         return (
             <div style={allStyle}>
-                <hr style={{borderColor: '#990000ff', borderWidth: '7px', margin: '0%'}}/>
-                <div style={contents}>
-                    <p style={{fontSize: '24px', marginBottom: '0'}}>{greeting}</p>
-                    <br/>
-                    <p style={{margin: '0', padding: '0', lineHeight: '20px'}}>{quote}</p>
-                    <br/><br/>
-                </div>
+                <br/>
+                <p style={{fontSize: '20px', marginBottom: '0'}}>{greeting}</p>
+                <p style={{fontSize: '27px'}}>{this.state.name}!</p>
+                <br/>
             </div>
         );
     }
