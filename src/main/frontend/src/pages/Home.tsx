@@ -9,7 +9,7 @@ function Home() {
           <div className="container">
             <div className="row justify-content-center justify-content-lg-start">
               <div className="col-md-8 col-lg-7 offset-lg-2">
-                <h1 className="main-title">Tests and Quizzes Made Easy</h1>
+                <h1 className="main-title">Tests and Quizzes Made Really Easy</h1>
 
               </div>
               <div className="col-md-8 col-lg-6 offset-lg-2">

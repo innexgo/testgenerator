@@ -40,7 +40,8 @@
     "styled-components": "^5.1.1",
     "typeface-exo": "^0.0.61",
     "typeface-ubuntu": "^0.0.65",
-    "typescript": "~3.9.6"
+    "typescript": "~3.9.6",
+    "yarn": "^1.22.5"
   },
   "scripts": {
     "start": "react-scripts start",
